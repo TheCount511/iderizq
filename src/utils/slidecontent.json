@@ -1,0 +1,15 @@
+
+[{
+    "id":1,
+    "image": "/images/slideImages/productid1.jpg",
+    "productpage":"1"
+},
+{
+    "id":2,
+    "image": "/images/slideImages/productid2.jpg",
+    "productpage":"2"
+},{
+    "id":3,
+    "image": "/images/slideImages/productid3.jpg",
+    "productpage":"3"
+}]
