@@ -1,10 +1,8 @@
-import { SwipeCarousel } from './components';
-import { CarouselItem } from './components/swipeslider';
-import Home from './pages/home';
+import Header from './containers/header';
+
 const App =()=>{
   return(
-    <SwipeCarousel/>
-     
+    <Header/>
   )
 }
 

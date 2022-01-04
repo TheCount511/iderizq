@@ -1,15 +1,23 @@
 
 [{
     "id":1,
-    "image": "/images/slideImages/productid1.jpg",
+    "image": "/images/slideImages/sofa1.jfif",
     "productpage":"1"
 },
 {
     "id":2,
-    "image": "/images/slideImages/productid2.jpg",
+    "image": "/images/slideImages/sofa2.jfif",
     "productpage":"2"
 },{
     "id":3,
-    "image": "/images/slideImages/productid3.jpg",
+    "image": "/images/slideImages/sofa3.jfif",
+    "productpage":"3"
+},{
+    "id":4,
+    "image": "/images/slideImages/sofa4.jfif",
+    "productpage":"3"
+},{
+    "id":5,
+    "image": "/images/slideImages/sofa5.jfif",
     "productpage":"3"
 }]

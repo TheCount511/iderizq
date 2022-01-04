@@ -5,6 +5,10 @@ display:flex;
 flex-direction:column;
 background-color:white;
 z-index:1;
+position: absolute;
+width: 100%;
+    width: stretch; 
+    width: fill-available;
 height:55px;
 -webkit-box-shadow: -1px 0px 6px 3px rgba(181,181,181,0.43);
 -moz-box-shadow: -1px 0px 6px 3px rgba(181,181,181,0.43);
@@ -63,7 +67,7 @@ background-color: #FFF;
 position: absolute;
 padding: 10px 0 0 0;
 width: 120px;
-top: 62px;
+top: 45px;
 right:${props => props.id === 1 ? "365px" : "210px"};
 opacity: 0;
 visibility: hidden;
@@ -124,16 +128,16 @@ margin-left: 25px;
 `
 
 export const CartItems = styled.span `
-padding: 1px 4px;
+padding: 1px 5px;
 border-radius: 50%;
-top: 23px;
-right: 97px;
+top: 4px;
+right: 84px;
 color: #FFF;
-font-size: 9px;
-background-color: #e1c2a6;
+font-size: 14px;
+background-color: #ca9360;
 position: absolute;
 :hover{
-background-color:#ca9360;
+background-color:#af723a;
 }
 `
 

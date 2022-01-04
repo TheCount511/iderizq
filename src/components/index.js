@@ -1,2 +1,2 @@
 export {default as Navbar} from './navbar';
-export {default as SwipeCarousel} from './swipeslider';
+export {default as Slider} from './carousel'

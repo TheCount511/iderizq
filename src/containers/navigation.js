@@ -5,17 +5,11 @@ const Navigation = () => {
     const user = { name: 'Fadhil', cartItems: [123, 345, 987, 678] }
     const [searchActive, setSearchActive] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
-    // useEffect(()=>{
-    // }, [setSearchActive, searchActive])
+  
     const ToggleSearch =()=>{
         setSearchActive(searchActive=>!searchActive)
     }
-    // const isMounted = useRef(false);
-
-    // useEffect(() => {
-    //     return isMounted.current ?
-    //         alert(searchActive.toString()) : isMounted.current = true;
-    // }, [searchActive]);
+   
 
     return (
         <Navbar>

@@ -4,8 +4,12 @@ export const CarouselWrapper = styled.div`
 overflow: hidden;
 height: 100%;
 text-align: center;
-`;
 
+:active{
+    cursor: grabbing;
+}
+`;
+  
 export const CarouselContainer = styled.div`
 white-space:nowrap;
 transition:transform 0.3s;
@@ -17,6 +21,8 @@ display:inline-flex;
 align-items:center;
 justify-content:center;
 height:100vh;
+background:url(${({ src }) => src}) top left / cover no-repeat;
+background-position:center center;
 background-color:green;
 color:#fff;`
 
@@ -37,9 +43,9 @@ padding: 1px 4px;
 border-radius: 50%;
 color: #FFF;
 font-size: 9px;
-background-color: #e1c2a6;
+background-color: ${({activeButton}) => activeButton === 'active'?'#503921' :' #e1c2a6;'} ;
 text-align: center;
-
+cursor: pointer;
 `
 
 export const IndicatorContainer = styled.div`
@@ -49,6 +55,7 @@ export const IndicatorContainer = styled.div`
     position: relative;    
     bottom: 40px;
     margin: 0 auto;
+    margin-bottom: -20px;
     display: flex;
     justify-content: space-between;
 

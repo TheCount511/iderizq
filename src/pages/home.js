@@ -1,7 +1,9 @@
-import Navigation from "../containers/navigation"
+import Header from "../containers/header";
 
 const Home =()=>{
-    return <Navigation/>
+    return <>
+    <Header/>
+    </>
 }
 
 export default Home;

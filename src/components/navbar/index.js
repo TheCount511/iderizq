@@ -12,6 +12,7 @@ const Navbar = ({ children, ...restProps }) => {
 
 
 Navbar.Logo = ({ children, ...restProps }) => {
+
     return <Logo {...restProps}>{children}</Logo>
 }
 
@@ -37,13 +38,13 @@ Navbar.DropdownLink = ({ children, ...restProps }) => {
 }
 
 
-Navbar.CartIcon = ({ cartItems, ...restProps }) => {
+Navbar.CartIcon = ({ children, ...restProps }) => {
     return (
     <div>
     <NavIcon {...restProps}>
         <img src={cart} alt="cart" />
     </NavIcon>
-    <CartItems {...cartItems}>{1}</CartItems>
+    <CartItems>{{...restProps}.cartItem}</CartItems>
     </div>)
 }
 Navbar.SearchIcon =params => {
@@ -59,7 +60,7 @@ Navbar.SearchBar = ({ onClick, searchActive,...restProps }) => {
             <SearchInput
                 placeholder="Type here to search"
             />
-            <CloseSearch src={clear} alt="close"onClick={onClick} />
+            <CloseSearch src={clear} alt="close" onClick={onClick} />
         </SearchBar>
 
     )
